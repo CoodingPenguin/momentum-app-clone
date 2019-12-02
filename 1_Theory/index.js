@@ -1,0 +1,1 @@
+console.log("I'm studying JS. I'm cute! I'm Worth It!")
