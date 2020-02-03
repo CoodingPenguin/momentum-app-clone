@@ -1,3 +1,23 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster|Noto+Sans+KR:400,500,700&display=swap");
+body,
+html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lobster", cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f2f2f2;
+  margin: 0;
+}
+
 .form,
 .greetings {
   display: none;
@@ -5,4 +25,69 @@
 
 .showing {
   display: block;
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.js-clock .js-title {
+  font-weight: 700;
+  font-size: 100px;
+  text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+  margin: 25px 0px;
+}
+
+.js-form,
+.js-toDoForm {
+  margin: 8px 0px;
+}
+
+.js-form input,
+.js-toDoForm input {
+  padding: 5px 15px;
+  border: 3px solid #d4d4d4;
+  border-radius: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #3a3a3a;
+}
+
+.js-form input:focus,
+.js-toDoForm input:focus {
+  outline: none;
+}
+
+.js-greetings {
+  font-weight: 500;
+  font-size: 30px;
+  margin: 15px 0px;
+  text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+.js-toDoList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.js-toDoList li {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.js-toDoList button {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
 }
