@@ -51,6 +51,7 @@ function paintToDo(text) {
     text: text,
     id: newId
   };
+
   toDos.push(toDoObj); // 리스트에 추가
   saveToDos(); // 추가된 리스트를 로컬에 저장
 }
@@ -65,11 +66,14 @@ function handleSubmit(event) {
 
 function loadToDos() {
   const loadedToDos = localStorage.getItem(TODOS_LS);
+
   if (loadedToDos !== null) {
     // string -> object
     const parsedToDos = JSON.parse(loadedToDos);
+    console.log(parsedToDos);
     parsedToDos.forEach(function(toDo) {
       paintToDo(toDo.text);
+      console.log(toDo);
     });
   }
 }
