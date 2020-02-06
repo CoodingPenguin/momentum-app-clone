@@ -2,7 +2,7 @@
 // 꼭 넓은 화면에서 봐주세요!
 
 // <⚠️ DONT DELETE THIS ⚠️>
-import "./styles.css";
+// import "./styles.css";
 // <⚠️ /DONT DELETE THIS ⚠️>
 
 // selectors
