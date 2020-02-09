@@ -1,0 +1,49 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 80px;
+  grid-auto-rows: 80px;
+  grid-gap: 10px;
+  background-color: black;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3d3b41;
+  border-radius: 20px;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+body span:active {
+  opacity: 0.8;
+}
+
+body span:not(.result) {
+  user-select: none;
+}
+
+.result {
+  background-color: black;
+  padding-right: 20px;
+  justify-content: flex-end;
+  font-size: 48px;
+  grid-column: 1 / 4;
+}
+
+.zero {
+  grid-column: 1 / 3;
+}
+
+.operation {
+  background-color: #ff9a00;
+}
+
+.reset {
+  background-color: #b3b3bb;
+}
