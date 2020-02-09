@@ -12,12 +12,22 @@ body {
   font-family: "Lobster", cursive;
   color: #f2f2f2;
   margin: 0;
+  overflow: hidden;
 }
 
 .header {
   margin: 10px 10px;
   display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   justify-content: flex-end;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+}
+
+.header .js-weather-description{
+  display: flex;
+  align-items: center;
 }
 
 .main {
@@ -42,11 +52,11 @@ body {
 }
 
 .bgImage {
+  overflow: hidden;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
   z-index: -1;
 }
 
@@ -71,6 +81,7 @@ body {
   font-weight: 400;
   font-size: 15px;
   color: #3a3a3a;
+  box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
 }
 
 .js-form input:focus,
