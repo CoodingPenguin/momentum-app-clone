@@ -17,6 +17,7 @@ function getWeather(lat, long) {
 
       const weatherToday = json.weather[0].main;
       const weatherImageURL = `https://openweathermap.org/img/wn/${json.weather[0].icon}@2x.png`;
+      console.log(weatherImageURL);
       const weatherImage = new Image(40, 40);
       weatherImage.src = weatherImageURL;
 
